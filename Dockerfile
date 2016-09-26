@@ -7,4 +7,4 @@ ADD php5/mods-available/xdebug_settings.ini /etc/php5/mods-available/xdebug_sett
 
 ENV XDEBUG_CONFIG="idekey=PHPSTORM"
 
-EXPOSE 9000 
+EXPOSE 9001 
