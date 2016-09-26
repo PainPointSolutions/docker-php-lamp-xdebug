@@ -1,6 +1,7 @@
 FROM nickistre/ubuntu-lamp-xdebug:latest
 
-RUN a2enmod rewrite 
+RUN apt-get install -y php5-curl && \
+  a2enmod rewrite 
 
 ADD php5/mods-available/xdebug_settings.ini /etc/php5/mods-available/xdebug_settings.ini
 
