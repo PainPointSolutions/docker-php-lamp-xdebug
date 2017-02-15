@@ -14,4 +14,6 @@ EXPOSE 9000
 
 WORKDIR /var/www/html
 
+ADD etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+
 CMD ["supervisord", "-n", "-c","/etc/supervisord.conf"]
