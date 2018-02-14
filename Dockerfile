@@ -5,6 +5,7 @@ RUN apt-get upgrade -y
 RUN apt-get install -y curl php5-curl php5-geoip php5-mcrypt
 
 RUN  a2enmod rewrite && \
+  a2enmod headers && \
   php5enmod curl && \
   php5enmod geoip && \
   php5enmod mcrypt
